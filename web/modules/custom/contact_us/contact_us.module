@@ -1,0 +1,18 @@
+<?php 
+
+/**
+ * Implements hook_mail().
+ */
+function custom_form_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'admin_notification':
+      $message['subject'] = ('New query submitted');
+      $message['body'][] = ('A new query has been submitted on the website.');
+      break;
+
+    case 'user_thank_you':
+      $message['subject'] = ('Thank you for your submission');
+      $message['body'][] = ('Thank you for submitting your query. We will get back to you soon.');
+      break;
+  }
+}

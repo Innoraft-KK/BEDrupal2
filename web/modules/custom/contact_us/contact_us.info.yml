@@ -1,0 +1,4 @@
+name: "contact us"
+type: module
+description: "contact us form"
+core_version_requirement: ^10
