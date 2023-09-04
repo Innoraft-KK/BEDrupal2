@@ -1,0 +1,22 @@
+uuid: a8d3c543-e8a7-4bb6-b5e7-390e967b948e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: news_tags_pathauto
+label: 'News Tags pathauto'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/tags/[term:name]'
+selection_criteria:
+  d0ff029c-05a1-4b2d-8346-600a149f009a:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: d0ff029c-05a1-4b2d-8346-600a149f009a
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      news_category: news_category
+selection_logic: and
+weight: -5
+relationships: {  }

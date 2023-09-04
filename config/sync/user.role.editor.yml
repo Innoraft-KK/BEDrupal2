@@ -1,0 +1,18 @@
+uuid: dc14ce2f-1916-4460-a630-dcff6c3d277d
+langcode: en
+status: true
+dependencies:
+  module:
+    - publishcontent
+id: editor
+label: Editor
+weight: 5
+is_admin: null
+permissions:
+  - 'access publish content settings'
+  - 'publish any node type news'
+  - 'publish editable node type news'
+  - 'publish own node type news'
+  - 'unpublish any node type news'
+  - 'unpublish editable node type news'
+  - 'unpublish own node type news'
