@@ -1,0 +1,7 @@
+name: 'Custom Feature Cron'
+type: module
+description: 'Change value of Feature boolean after seven days.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node

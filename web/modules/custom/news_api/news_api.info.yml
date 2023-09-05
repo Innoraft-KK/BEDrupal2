@@ -1,0 +1,8 @@
+name: "News Data API"
+type: module
+description: "Provides a custom API for displaying News Data in JSON format."
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:node
+  - drupal:taxonomy

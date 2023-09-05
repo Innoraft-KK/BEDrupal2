@@ -1,0 +1,7 @@
+custom_api.display_data:
+  path: "/api/news-data"
+  defaults:
+    _controller: '\Drupal\news_api\Controller\NewsApiController::displayData'
+    _format: "json"
+  requirements:
+    _access: "TRUE"
